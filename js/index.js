@@ -63,7 +63,7 @@ function gameEngine(){
             localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
             hiscoreBox.innerHTML = "HiScore: " + hiscoreval;
         }
-         if(snakeArr[0].y === food1.y && snakeArr[0].x ===food1.x){
+         if(snakeArr[0].y === food2.y && snakeArr[0].x ===food2.x){
         foodSound.play();
         score += 1;
         speed +=1;
@@ -113,6 +113,10 @@ function gameEngine(){
     foodElement.style.gridRowStart = food.y;
     foodElement.style.gridColumnStart = food.x;
     foodElement.classList.add('food')
+
+    foodElement.style.gridRowStart = food2.y;
+    foodElement.style.gridColumnStart = food2.x;
+    foodElement.classList.add('food')    
     board.appendChild(foodElement);
 
 
