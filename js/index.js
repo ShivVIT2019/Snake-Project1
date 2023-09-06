@@ -12,7 +12,7 @@ let snakeArr = [
 ];
 
 food = {x: 6, y: 7};
-food1 = {x :8,y:9};
+food2 = {x :8,y:9};
 
 // Game Functions
 function main(ctime) {
